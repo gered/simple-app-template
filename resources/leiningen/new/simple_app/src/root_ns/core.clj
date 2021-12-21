@@ -18,9 +18,11 @@
 
 (defstate ^{:on-reload :noop} repl-server
   :start
-  (let [{:keys [port bind socket]} (:nrepl config)
-        server (nrepl/start-server :port port :bind bind :socket socket)]
-    (log/info "Started nREPL server:" (:server-socket server))
+  (let [{:keys [port bind]
+         :or   {port 7000
+                bind "127.0.0.1"}} (:nrepl config)
+        server (nrepl/start-server :port port :bind bind)]
+    (log/info (format "Starting nREPL server listening on %s:%d" bind port))
     server)
   :stop
   (when repl-server

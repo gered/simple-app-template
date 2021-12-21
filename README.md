@@ -20,7 +20,7 @@ The project can be run simply by:
 $ lein run
 ```
 
-A nREPL server will be started which can be connected to on port 4000 (configured via the aforementioned `config.edn`).
+A nREPL server will be started which can be connected to on port 7000 (configured via the aforementioned `config.edn`).
 
 ## License
 
