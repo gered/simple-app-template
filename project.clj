@@ -1,4 +1,4 @@
-(defproject net.gered/lein-template.simple-app "0.1.2"
+(defproject net.gered/lein-template.simple-app "0.1.3-SNAPSHOT"
   :description         "Simple Clojure CLI app or tool project template."
   :url                 "https://github.com/gered/simple-app-template"
   :license             {:name "MIT License"
