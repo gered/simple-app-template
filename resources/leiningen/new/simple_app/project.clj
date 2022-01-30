@@ -5,8 +5,8 @@
   :license      {:name "MIT License"
                  :url  "http://opensource.org/licenses/MIT"}
 
-  :dependencies [[ch.qos.logback/logback-classic "1.2.7"]
-                 [cprop "0.1.19"]
+  :dependencies [[aero "1.1.6"]
+                 [ch.qos.logback/logback-classic "1.2.7"]
                  [mount "0.1.16"]
                  [nrepl "0.9.0"]
                  [org.clojure/clojure "1.10.0"]

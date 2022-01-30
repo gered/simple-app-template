@@ -2,7 +2,7 @@
   (:gen-class)
   (:require
     [clojure.tools.logging :as log]
-    [cprop.core :refer [load-config]]
+    [aero.core :refer [read-config]]
     [mount.core :as mount :refer [defstate]]
     [nrepl.server :as nrepl]))
 
@@ -14,7 +14,7 @@
   :start
   (do
     (log/info "Loading config.edn")
-    (load-config :file "config.edn")))
+    (read-config "config.edn")))
 
 (defstate ^{:on-reload :noop} repl-server
   :start
