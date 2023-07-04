@@ -6,11 +6,11 @@
                  :url  "http://opensource.org/licenses/MIT"}
 
   :dependencies [[aero "1.1.6"]
-                 [ch.qos.logback/logback-classic "1.2.7"]
-                 [mount "0.1.16"]
-                 [nrepl "0.9.0"]
-                 [org.clojure/clojure "1.10.0"]
-                 [org.clojure/tools.logging "1.2.1"]]
+                 [ch.qos.logback/logback-classic "1.2.12"]
+                 [mount "0.1.17"]
+                 [nrepl "1.0.0"]
+                 [org.clojure/clojure "1.10.3"]
+                 [org.clojure/tools.logging "1.2.4"]]
 
   :main         {{root-ns}}.core
 
